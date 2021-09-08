@@ -1,0 +1,197 @@
+.switch {
+  display: block;
+  z-index: 1;
+  width: 15%;
+  transition: background 200ms;
+  margin: auto;
+  border-radius: 2px;
+  position: relative;
+  background: #ccc;
+}
+
+.switch:first-child {
+  margin-right: 1rem;;
+}
+
+.switch:last-child {
+  margin-left: 1rem;;
+}
+
+.switch:after {
+  content: "";
+  display: block;
+  padding-top: 180%;
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2rem;
+  height: 4rem;
+  margin: auto;
+  transition: all 0.2s;
+  border: 0;
+  outline: none;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.toggle:before, .toggle:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  box-shadow: 2px 2px 0 2px rgba(1, 28, 38, 0.2);
+  background: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.toggle:before {
+  content: "";
+  top: 0;
+  left: 0;
+  background: #ccc;
+}
+.toggle:after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+
+body.on-A .switch-A .toggle:before, body.on-B .switch-B .toggle:before {
+  background: #b3b3b3;
+}
+body.on-A .switch-A .toggle:after, body.on-B .switch-B .toggle:after {
+  background: #ccc;
+}
+
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 200ms;
+  background: #058abb;
+}
+.wrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(transparent, rgba(1, 28, 38, 0.6));
+}
+
+.bulb {
+  width: 15%;
+  position: relative;
+  perspective: 500px;
+  margin: auto;
+}
+.bulb:after {
+  content: "";
+  display: block;
+  padding-top: 200%;
+}
+
+.glass {
+  position: absolute;
+  perspective: 500px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.2;
+  background: rgba(217, 241, 250, 0.2);
+  border-radius: 100%/40%;
+  transform: rotateX(-20deg);
+}
+.glass:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+  background: linear-gradient(rgba(217, 241, 250, 0.1), transparent);
+  border-radius: 100%/40%;
+}
+
+.filament {
+  border: 3px solid #fff;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  bottom: 0;
+  left: 30%;
+  border-radius: 30%/5%;
+  z-index: 1;
+  transition: all 0.2s;
+  box-shadow: 0 0 4rem rgba(255, 255, 255, 0.5);
+  animation: pulse 2s infinite;
+}
+
+.stem {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  left: 20%;
+  height: 14%;
+  top: 89%;
+  background: repeating-linear-gradient(-15deg, #ccc, #ccc 9%, #c2c2c2 10%, #c2c2c2 20%);
+  z-index: 2;
+}
+
+.stem:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 80%;
+  background: #c2c2c2;
+  height: 5px;
+}
+.stem:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  background: rgba(1, 28, 38, 0.9);
+  opacity: 0;
+
+}
+
+.btn-text {
+  font-size: 3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* needed */
+body.on .glass {
+  background: rgba(217, 241, 250, 0.8);
+  opacity: 0.8;
+  box-shadow: 0 0 2rem #fff;
+}
+
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 3rem white;
+  }
+}
