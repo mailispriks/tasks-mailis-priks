@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Royal Gala",
+    "type": "APPLES_PEARS",
+    "price": 1.09,
+    "discount": 20
+  },
+  {
+    "name": "Apple Jonagold",
+    "type": "APPLES_PEARS",
+    "price": 0.9,
+    "discount": 0
+  },
+  {
+    "name": "Apple Granny Smith",
+    "type": "APPLES_PEARS",
+    "price": 2.49,
+    "discount": 0
+  },
+  {
+    "name": "Apple Krista",
+    "type": "APPLES_PEARS",
+    "price": 1.99,
+    "discount": 0
+  },
+  {
+    "name": "Pear Conference",
+    "type": "APPLES_PEARS",
+    "price": 2.49,
+    "discount": 0
+  },
+  {
+    "name": "Kiwi",
+    "type": "TROPICAL",
+    "price": 4.79,
+    "discount": 0
+  },
+  {
+    "name": "Kiwi yellow",
+    "type": "TROPICAL",
+    "price": 3.99,
+    "discount": 15
+  },
+  {
+    "name": "Grapes Red Globe",
+    "type": "TROPICAL",
+    "price": 2.49,
+    "discount": 7
+  },
+  {
+    "name": "Red grapes",
+    "type": "TROPICAL",
+    "price": 2.99,
+    "discount": 5
+  },
+  {
+    "name": "Seedless grapes",
+    "type": "TROPICAL",
+    "price": 2.99,
+    "discount": 10
+  },
+  {
+    "name": "Banana",
+    "type": "TROPICAL",
+    "price": 1.09,
+    "discount": 0
+  },
+  {
+    "name": "Lemon",
+    "type": "TROPICAL",
+    "price": 1.59,
+    "discount": 0
+  },
+  {
+    "name": "Cucumber",
+    "type": "VEGETABLES",
+    "price": 2.99,
+    "discount": 0
+  },
+  {
+    "name": "Tomato",
+    "type": "VEGETABLES",
+    "price": 1.29,
+    "discount": 0
+  },
+  {
+    "name": "Potato Laheotsa",
+    "type": "VEGETABLES",
+    "price": 1.49,
+    "discount": 0
+  },
+  {
+    "name": "Potato Early",
+    "type": "VEGETABLES",
+    "price": 2.09,
+    "discount": 10
+  },
+  {
+    "name": "Potato Gala",
+    "type": "VEGETABLES",
+    "price": 1.49,
+    "discount": 0
+  }
+]
