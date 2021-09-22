@@ -11,9 +11,9 @@
 ## Ex 1
 
 1. Create function that helps you to find all of one type
-2. Log out all vegetables
-3. Log out all tropical
-4. Calculate total of 1kg each of tropical fruits and log it out
+2. Log out all TROPICAL
+3. Calculate total of 1kg each of tropical fruits and log it out
+4. Find and log out all APPLES_PEARS type products that have word "Apple" in their name
 
 ## Ex 2
 
