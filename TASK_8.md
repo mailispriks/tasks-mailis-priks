@@ -35,7 +35,7 @@ Exercises with * are not mondatory.
 
 1. Find all movies, where Leonardo DiCaprio has played
 2. Compare these movies:
-- Log out for each Leonardo DiCaprio movie data like that:
+- Log out each Leonardo DiCaprio movie data like that:
 ```
 Movie title:
 Director
